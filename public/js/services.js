@@ -35,7 +35,7 @@ angular.module('todoApp.services',[]).factory('Todo',['$http','CREDENTIALS',func
             });
         }
     }
-}]).value('CREDENTIALS',{
+}]).value('CREDENTIALS1',{
     APP_URL:'https://api.parse.com',
     APP_VER:'1',
     APP_CLA:'Todo',
@@ -43,7 +43,7 @@ angular.module('todoApp.services',[]).factory('Todo',['$http','CREDENTIALS',func
     APP_KEYNAME:'X-Parse-REST-API-Key',
     APP_ID: 'xhTpJiNedJ7mmDj3LTTBUePqSVegcJHzEbh70Y0Q',
     REST_API_KEY:'XCfQDPODgNB1HqmaCQgKLPWGxQ0lCUxqffzzURJY'
-}).value('CREDENTIALS1',{
+}).value('CREDENTIALS',{
     APP_URL:'https://leancloud.cn',
     APP_VER:'1.1',
     APP_CLA:'Todo',
