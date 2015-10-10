@@ -11,6 +11,9 @@ angular.module('todoApp.controllers',[]).controller('TodoListController',['$scop
         Todo.delete(item.objectId);
         $scope.items.splice($scope.items.indexOf(item),1);
     }
+    $scope.postItem=function(item){
+        Todo.post(item.content);
+    }
 
 }]).controller('TodoCreationController',['$scope','Todo','$state',function($scope,Todo,$state){
 
