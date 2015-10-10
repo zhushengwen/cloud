@@ -19,6 +19,11 @@ angular.module('todoApp.services',[]).factory('Todo',['$http','CREDENTIALS',func
                 headers:GH
             });
         },
+        post:function(phone){
+            return $http.post('api.leancloud.cn/1.1/functions/SendV5Code',{"phone":phone},{
+                headers:GH
+            });
+        },
         create:function(data){
             return $http.post(BASE_URL,data,{
                 headers:PH
