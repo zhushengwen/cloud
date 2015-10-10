@@ -13,6 +13,7 @@
                   href="#/todo/edit/{{item.objectId}}/{{item.content}}">
             {{item.content}}
             <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)"></ion-delete-button>
+            <ion-option-button ng-click="postItem(item)" class="icon ion-ios-trash-outline"></ion-option-button>
         </ion-item>
     </ion-list>
 </ion-content>
