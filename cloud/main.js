@@ -31,5 +31,5 @@ var req = http.request(opt, function(res) {
 req.end();
 }
 else
-response.success("请输入手机号！" + '{"phone":"13164355239"}');
+response.success("请输入手机号！" + '{"phone":"1316435****"}');
 });
