@@ -46,7 +46,7 @@ AV.Cloud.define("SendV5Code", function(request, response) {
                             }else response.success("error:"+body);
                         });
                     }).on('error', function(e) {
-                        response.success("error: " + e.message);
+                        response.success("error:" + e.message);
                     });
 
                     req.write(postData);
@@ -95,18 +95,18 @@ AV.Cloud.define("SendV5Code", function(request, response) {
                             response.success(post.id);
                         },
                         error: function(post, error) {
-                            response.success("error: " +error);
+                            response.success("error:" +error);
                         }
                     });
-                }else response.success("error: "+body);
+                }else response.success("error:"+body);
             });
         }).on('error', function(e) {
-            response.success("error: " + e.message);
+            response.success("error:" + e.message);
         });
         req.end();
     }
     else
-        response.success("请输入手机号！" + '{"phone":"1316435****"}');
+        response.success("error:请输入手机号！" + '{"phone":"1316435****"}');
 
 
 });
