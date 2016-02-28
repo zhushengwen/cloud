@@ -59,6 +59,6 @@ angular.module('todoApp.services',[]).factory('Todo',['$http','CREDENTIALS',func
     APP_CLA:'Todo',
     APP_IDNAME:'X-AVOSCloud-Application-Id',
     APP_KEYNAME:'X-AVOSCloud-Application-Key',
-    APP_ID: 'Ldg56kwcgWhUOpuzipUoTvGE',
-    REST_API_KEY:'rE72MRgOtI6iePFtzQiUlJ1f'
+    APP_ID: 'eyNXVWoFXdz6Hzkg0DujcgJq-gzGzoHsz',
+    REST_API_KEY:'zNY11GvVzLYXvzMlYoRQDvtY'
 });
